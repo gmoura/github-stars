@@ -1,10 +1,10 @@
 # github-stars
 
-#Requirements
+# Requirements
 
 * Node >= v8.10.0 
 
-#Stack
+# Stack
 
 * Express
 * Webpack loaded by Express
@@ -16,7 +16,7 @@
 * ES6
 * BEM for CSS architecture
 
-#Features 
+# Features 
 
 * Gitghub OAuth integration 
 * Get User's Github infos, like name, user,company, bio, email, location and blog
@@ -24,7 +24,7 @@
 * Ability to star an repository
 * Ability to unstar an repository
 
-#To do
+# To do
 
 * Search bar with auto filter
 
