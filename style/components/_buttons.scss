@@ -1,0 +1,33 @@
+@mixin button {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 14px 30px;
+  text-decoration: none;
+}
+
+.button--star {
+  @include button();
+  background: $button-star-background-color;
+  border: 2px solid $button-star-border-color;
+  color: $button-star-color;
+  
+  &:hover  {
+    border: 1px solid $button-hover-border-color;
+    cursor: pointer;
+  }
+}
+
+.button--unstar {
+  @include button();
+  background: $button-unstar-background-color;
+  border: 2px solid $button-unstar-border-color;
+  color: $button-unstar-color;
+  
+  &:hover  {
+    border: 1px solid $button-hover-border-color;
+    cursor: pointer;
+  }
+}

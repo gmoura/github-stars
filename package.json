@@ -1,0 +1,38 @@
+{
+  "name": "gibhub-user-starred-repos",
+  "version": "1.0.0",
+  "description": "Github User starred repos",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://ogmoura@bitbucket.org/ogmoura/github-user-stars.git"
+  },
+  "author": "Guilherme Moura Nascimento",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/ogmoura/github-user-stars#readme",
+  "devDependencies": {
+    "@octokit/rest": "^15.2.5",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "css-loader": "^0.28.10",
+    "express": "^4.16.2",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.2",
+    "webpack": "^4.1.0",
+    "webpack-cli": "^2.0.10",
+    "webpack-dev-server": "^3.1.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "normalize-scss": "^7.0.1",
+    "pug": "^2.0.1",
+    "superagent": "^3.8.2"
+  }
+}

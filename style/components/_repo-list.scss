@@ -1,0 +1,67 @@
+.user-repos-with-stars{
+  width: 900px;
+  background: $body-background;
+  box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  float: left;
+  padding: 30px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
+.user-repos-with-stars__list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.user-repos-with-stars__item {
+  background: $body-background;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+  padding: 25px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 35px;
+  position: relative;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.user-repos-with-stars__title {
+  font-size: 20px;  
+  color: $repo-title-color;
+  font-weight: 400;
+}
+
+.user-repos-with-stars__subtitle {
+  font-weight: 300;
+  font-size: 16px;
+  color: $repo-title-color;
+  padding-right: 120px;
+}
+
+.user-repos-with-stars__stars {
+  font-weight: 300;
+  font-size: 16px;
+  color: $repo-title-color;
+  position: relative;
+  padding-left: 25px;
+
+  &:before {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 18px;
+    left: 0;
+    top: -1px;
+    background: no-repeat center center url('~/public/images/star.svg') transparent
+  }
+}
+
+.user-repos-with-stars__to-star, .user-repos-with-stars__un-star {
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  margin-top: -25px;
+}

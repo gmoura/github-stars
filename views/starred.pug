@@ -1,0 +1,19 @@
+html(lang="pt-BR" )
+  head
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title= "Github User starred repos"
+  body
+    main(class="wrapper")
+      section(class="search search--large")
+        include partials/logo.pug
+        form(class="search__form")
+          input(class="search__input search__input--simple ")
+          button(class="search__submit text-hide") search
+        img(class="search__profile-image" src="public/images/user-profile-search.png")
+      
+      section(class="user-activity")
+        include partials/user_meta.pug
+        div(class="user-repos-with-stars")
+          include partials/repos_with_stars.pug
+
+    script(src='/user.bundle.js')

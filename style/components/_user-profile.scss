@@ -1,0 +1,55 @@
+.user-profile{
+  width: 240px;
+  margin-top: 35px;
+  background-color: $user-profile-background;
+  float: left;
+  border-radius: 5px 0 0 5px;
+  color: $user-profile-color;
+}
+
+.user-hero {
+  text-align: center;
+  padding: 25px 0;
+}
+
+.user-hero__photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.user-hero__name{
+  margin: 0;
+  font-weight: normal;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.user-hero__nike{
+  margin: 0;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.user-hero-meta {
+  background-color: $user-profile-contact-color;
+  font-weight: 100;
+  font-size: 14px;
+  padding: 30px 15px 30px 15px;
+  box-sizing: border-box;
+  border-radius: 0 0 0 5px;
+}
+
+.user-hero-meta__job{
+  margin-bottom: 30px;
+}
+
+.user-hero-meta__contact {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.user-hero-meta__contact-item {
+  margin-bottom: 10px;
+}

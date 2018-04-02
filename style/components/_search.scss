@@ -1,0 +1,70 @@
+.search{
+}
+
+.search--small {
+  text-align: center;
+  width: 870px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  top:50%;
+  margin-left: -435px;
+  margin-top: -100px;
+}
+
+.search--large {
+  padding-top: 128px;
+
+  .logo, .search__form, .search__profile-image {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .logo {
+    margin-right: 45px;
+  }
+  .search__form {
+    width: 770px;
+    margin-right: 32px;
+  }
+}
+
+.search__form {
+  position: relative;
+}
+
+.search__profile-image {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+.search__input {
+  width: 100%;
+  background: $body-background;
+  font-weight: 100;
+  outline: none;
+}
+
+.search__input--simple {
+  padding: 15px 34px;
+  border: 0 none;
+  border-bottom: 1px solid $search-border-color;
+}
+.search__input--rounded {
+  padding: 36px 34px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  border: 0 none;
+}
+
+.search__submit {
+  width: 20px;
+  height: 18px;
+  position: absolute;
+  right: 34px;
+  top: 50%;
+  margin-top: -10px;
+  cursor: pointer;
+  background: no-repeat center center url('~/public/images/search.svg') transparent
+}

@@ -1,0 +1,7 @@
+ul(class="user-repos-with-stars__list")
+  each item in data
+    li(class="user-repos-with-stars__item")
+      h2(class="user-repos-with-stars__title")= item.repo.name
+      h3(class="user-repos-with-stars__subtitle")= item.repo.description
+      span(class="user-repos-with-stars__stars ")= item.repo.stargazers_count
+      button(class="user-repos-with-stars__button user-repos-with-stars__un-star button--unstar" data-owner=item.repo.owner.login data-repo=item.repo.name) unstar

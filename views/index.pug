@@ -1,0 +1,18 @@
+html(lang="pt-BR" )
+  head
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title= "Github User starred repos"
+  body
+    main(class="wrapper")
+      section(class="search search--small")
+        include partials/logo.pug
+        //-
+          form(class="search__form")
+            input(class="search__input search__input--rounded")
+            button(class="search__submit text-hide") search
+        //
+        
+        a(class="button--unstar" href=authorize_uri + '?client_id='+ client_id + '&redirect_uri=' + redirect_uri + '&scope='+ scope title="Login with Github") Login with Github
+
+
+    script(src='/home.bundle.js')

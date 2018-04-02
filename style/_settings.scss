@@ -1,0 +1,38 @@
+//Grid
+$max-width: 1140px;
+
+//General Colors
+$body-background: #FFFFFF;
+$logo-color: #4F4F4F;
+$logo-star-color: #5253B9;
+$not-found-title-color: #4F4F4F;
+
+//Search colors
+$search-border-color: #BABABA;
+
+//User colors
+$user-profile-background: #4a4ba6;
+$user-profile-color: #FFFFFF;
+$user-profile-contact-color: #5253B9;
+
+//Buttons colors
+$button-star-background-color: #FFFFFF;
+$button-star-color: #5152B7;
+$button-star-border-color: #5152B7;
+
+$button-unstar-background-color: #5152B7;
+$button-unstar-color: #ffffff;
+$button-unstar-border-color: #5152B7;
+
+$button-hover-border-color: #5152B7;
+
+//Repos with star colors
+$repo-title-color: #4F4F4F;
+
+/**
+* Font Family
+*/
+//Roboto
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400');
+
+$roboto:  'Roboto', sans-serif;
