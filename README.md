@@ -29,14 +29,14 @@
 * Search bar with auto filter
 
 
-#Install dependencies
+# Install dependencies
 
 `$ npm install`
 
-#Run the prejct
+# Run the prejct
 
 `$ npm start`
 
-#View the project
+# View the project
 
 Open in your browser the following url `http://localhost:3000`
