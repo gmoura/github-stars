@@ -1,5 +1,5 @@
 {
-  "name": "gibhub-user-starred-repos",
+  "name": "github-stars",
   "version": "1.0.0",
   "description": "Github User starred repos",
   "main": "index.js",
@@ -9,11 +9,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://ogmoura@bitbucket.org/ogmoura/github-user-stars.git"
+    "url": "git+https://github.com:gmoura/github-stars.git"
   },
   "author": "Guilherme Moura Nascimento",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/ogmoura/github-user-stars#readme",
+  "homepage": "https://github.com/gmoura/github-stars/blob/master/README.md",
   "devDependencies": {
     "@octokit/rest": "^15.2.5",
     "babel-core": "^6.26.0",
