@@ -1,4 +1,4 @@
-# github-user-stars
+# github-stars
 
 #Requirements
 
