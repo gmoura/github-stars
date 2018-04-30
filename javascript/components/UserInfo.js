@@ -1,4 +1,3 @@
-const superagent = require('superagent');
 const git = require('../services');
 const doc = document;
 
