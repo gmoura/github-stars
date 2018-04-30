@@ -2,7 +2,7 @@ const superagent = require('superagent');
 const doc = document;
 const selector = '.user-repos-with-stars__button';
 
-class Repos {
+class StarsButtons {
   constructor () {
     this.bindButtons()
   }
@@ -50,4 +50,4 @@ class Repos {
   }
 }
 
-export default Repos;
+export default StarsButtons;

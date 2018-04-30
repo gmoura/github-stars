@@ -1,11 +1,11 @@
 import '../style/index.scss';
 
 import User from './components/UserInfo';
-import ReposManagers from './controllers/ReposManagers';
+import StarsButtons from './components/StarsButtons';
 
 const app = {
   init () {
-    const repos = new ReposManagers();
+    new StarsButtons();
     User.get();
   }
 }
