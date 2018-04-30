@@ -1,4 +1,4 @@
-const superagent = require('superagent');
+const git = require('../services');
 const doc = document;
 const selector = '.user-repos-with-stars__button';
 
@@ -12,9 +12,7 @@ class StarsButtons {
   }
 
   unstar (owner, repo, element) {
-    superagent
-      .post('/unstar')
-      .send({owner,repo})
+    git.unstar({owner,repo})
       .then((result) => {
         element.classList.remove('button--unstar');
         element.classList.add('button--star')
@@ -23,14 +21,12 @@ class StarsButtons {
   }
 
   star (owner, repo, element) {
-    superagent
-    .post('/star')
-    .send({owner,repo})
-    .then((result) => {
-      element.classList.remove('button--star');
-      element.classList.add('button--unstar')
-      element.textContent = 'unstar';
-    })
+    git.star({owner,repo})
+      .then((result) => {
+        element.classList.remove('button--star');
+        element.classList.add('button--unstar')
+        element.textContent = 'unstar';
+      })
   }
 
   bindButtons () {
