@@ -1,14 +1,14 @@
 const superagent = require('superagent');
+const git = require('../services');
 const doc = document;
 
 const UserInfor = {
+  
   get() {
-    superagent
-      .get('/user-info')
-      .then( (result) => {
-        this.render(result.body);
-      })
-
+    git.getUserInfo()
+    .then( (result) => {
+      this.render(result.body);
+    })
   },
   render (data) {
     doc.querySelector('.user-hero__photo').setAttribute('src', data.avatar_url);
