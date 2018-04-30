@@ -71,6 +71,7 @@ router.post('/unstar', (req, res, next) => {
     type: 'oauth',
     token: req.cookies.access_token
   })
+
   octokit.activity.unstarRepo({'owner':req.body.owner, 'repo': req.body.repo})
   .then(result => {
     res.json(result.data);
@@ -82,14 +83,13 @@ router.post('/unstar', (req, res, next) => {
 
 
 router.post('/star', (req, res, next) => {
-  const owner = req.body.owner;
-  const repo = req.body.repo;
+  
   octokit.authenticate({
     type: 'oauth',
     token: req.cookies.access_token
   })
 
-  octokit.activity.starRepo({owner, repo})
+  octokit.activity.starRepo({'owner':req.body.owner, 'repo': req.body.repo})
   .then(result => {
     res.json(result.data);
   }).catch(err => {
