@@ -31,17 +31,19 @@ class StarsButtons {
 
   bindButtons () {
     const buttons = this.selectecButtons();
+    const buttonClickEvent = (event) => {
+      const element = event.target;
+      const owner = element.dataset.owner;
+      const repo = element.dataset.repo;
+      if(element.classList.contains('button--unstar')){
+        this.unstar(owner, repo, element)
+      } else {
+        this.star(owner, repo, element)
+      }
+    } 
+
     buttons.forEach((element, index, number) => {
-      element.addEventListener('click', (event) => {
-        const element = event.target;
-        const owner = element.dataset.owner;
-        const repo = element.dataset.repo;
-        if(element.classList.contains('button--unstar')){
-          this.unstar(owner, repo, element)
-        } else {
-          this.star(owner, repo, element)
-        }
-      })
+      element.addEventListener('click', buttonClickEvent)
     })
   }
 }
