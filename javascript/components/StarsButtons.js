@@ -30,7 +30,7 @@ class StarsButtons {
   }
 
   bindButtons () {
-    let buttons = this.selectecButtons();
+    const buttons = this.selectecButtons();
     buttons.forEach((element, index, number) => {
       element.addEventListener('click', (event) => {
         const element = event.target;
