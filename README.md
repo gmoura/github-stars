@@ -41,4 +41,4 @@
 
 Open in your browser the following url `http://localhost:3000`
 
-![](https://cl.ly/1k3X1i3B2J1C/Captura%20de%20pantalla%202018-08-15%20a%20la(s)%2012.06.43.png)
+![https://app.talento.laboratoria.la/profile/MSyMX9nDTVXRcLh8pUob29SiQND3](https://cl.ly/1k3X1i3B2J1C/Captura%20de%20pantalla%202018-08-15%20a%20la(s)%2012.06.43.png)
