@@ -40,3 +40,5 @@
 # View the project
 
 Open in your browser the following url `http://localhost:3000`
+
+![](https://cl.ly/1k3X1i3B2J1C/Captura%20de%20pantalla%202018-08-15%20a%20la(s)%2012.06.43.png)
